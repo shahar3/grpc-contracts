@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package location;
+
+// Specify the Go package for generated code.
+option go_package = "github.com/shahar3/grpc-contracts/location;location";
+
+message CityCountry {
+  string id = 1;
+  string name = 2;
+  string locationType = 3; 
+  string country = 4;    
+  string latitude = 5;
+  string longitude = 6;
+  string emoji = 7;
+}
